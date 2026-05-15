@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Curriculum Vitae</title>
+    <style>
+        :root {
+            --primary: #1e3d3a;      
+            --secondary: #2c4a47;    
+            --accent: #3b7a75;       
+            --accent-light: #e8f1f0; 
+            --text: #2f3e46;         
+            --bg: #f4f7f6;           
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg);
+            color: var(--text);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        }
+
+        /* Flexbox grid layout for the header section */
+        header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            border-bottom: 2px solid var(--accent-light);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        /* Container to hold text metadata */
+        .header-text {
+            flex: 1;
+        }
+
+        /* Profile image styling layout */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Perfect circle */
+            object-fit: cover;  /* Prevents image distortion */
+            border: 3px solid var(--accent);
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+
+        .contact-info a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+            color: var(--accent);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 12px;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .item-sub {
+            font-style: italic;
+            color: #5c6b68;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: var(--accent-light);
+            color: var(--primary);
+            padding: 6px 14px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 20px; }
+            header { flex-direction: column-reverse; text-align: center; gap: 15px; }
+            .contact-info { justify-content: center; }
+            .item-header { flex-direction: column; }
+        }
+
+        @media print {
+            body { background: #fff; padding: 0; }
+            .container { box-shadow: none; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <!-- Name and contact metadata details -->
+            <div class="header-text">
+                <h1>Stefan van Wyk - Curriculum Vitae</h1>
+                <div class="contact-info">
+                    <span>📍 Strand, Western Cape, South Africa</span>
+                    <span>📞 +27 62 441 9125</span>
+                    <span>✉️ <a href="mailto:stefan9vwyk@gmail.com">stefan9vwyk@gmail.com</a></span>
+                    <span>🔗 <a href="https//:www.linkedin.com/in/stefan-van-wyk-a66537240" target="_blank">www.linkedin.com/in/stefan-van-wyk-a66537240</a></span>
+                </div>
+            </div>
+            
+            <!-- Replace 'profile-placeholder.jpg' with your actual image path -->
+            <img src="Profile_photo.jpg" alt="Your Name Profile Picture" class="profile-img">
+        </header>
+
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p>
+                Aspiring Software Engineer with a proven track record of leadership, adaptability, and performance-driven results across diverse industries.
+                Highly resilient and motivated by practical, hands-on problem-solving, with a strong commitment to continuous learning and integrating 
+                constructive feedback. A collaborative team player with professional experience managing workflows and leading teams to
+                success under tight deadlines.
+
+                <ul>
+                    <li>Ster-Kinekor: Served as , managing front-line customer operations and service delivery.</li>
+                    <li>
+                        Swartland Investments: Advanced to , taking charge of specialized machinery operations and direct team management.
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span>Bartender</span>
+                    <span>Oct 2023 — Present</span>
+                </div>
+                <div class="item-sub">Bart's Tavern, Strand</div>
+                <ul>
+                    <li>Delivered high-quality customer service, managing front-line inquiries and resolving issues efficiently.</li>
+                    <li>Maintained strict financial accuracy while managing float tills and balancing daily transactions.</li>
+                    <li>Overseen the secure operations, compliance, and cash reconciliation of on-site gambling machines and main safes.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Level 3 Machine Specialist / Spray Painter</span>
+                    <span>Jan 2022 — Sep 2023</span>
+                </div>
+                <div class="item-sub">Swartland Investments, Moorreesburg</div>
+                <ul>
+                    <li>Managed and operated high-precision, specialized industrial machinery safely and efficiently.</li>
+                    <li>Led, coordinated, and trained a dedicated production team to achieve operational targets.</li>
+                    <li>Oversaw strict deadline management to guarantee consistent on-time project and product delivery.</li>
+                    <li>Evaluated workflow environments to implement process optimizations, resulting in increased production speeds.</li>
+                    <li>Conducted rigorous quality control inspections to enforce product consistency and minimize technical defects.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>Floor Supervisor</span>
+                    <span>Nov 2018 — Mar 2020</span>
+                </div>
+                <div class="item-sub">Ster-Kinekor, Tygervalley Mall, Bellville</div>
+                <ul>
+                    <li>Managed front-line customer operations to deliver high-quality service and conflict resolution.</li>
+                    <li>Oversaw strict financial controls, including balancing the float safe, executing staff cash-ups, and distributing till floats.</li>
+                    <li>Coordinated day-to-day cinema operations to ensure smooth workflows and optimal resource allocation.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span>Software Engineering Bootcamp</span>
+                    <span>Dec 2025 — Present</span>
+                </div>
+                <div class="item-sub">Stellenbosch University / HyperionDev, Remote</div>
+                <ul>
+                    <li>Acquiring deep practical knowledge in software development methodologies, algorithms, and data structures.</li>
+                    <li>Building full-stack projects using modern programming languages and version control systems (Git/GitHub).</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span>National Senior Certificate (Matric) — NQF Level 4</span>
+                    <span>2016</span>
+                </div>
+                <div class="item-sub">Brackenfell High School, Cape Town</div>
+            </div>
+        </section>
+
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container" style="margin-bottom: 20px;">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Django Framework</span>
+                <span class="skill-tag">SQL / SQLite</span>
+                <span class="skill-tag">HTML5 / CSS3</span>
+                <span class="skill-tag">Bootstrap CSS</span>
+                <span class="skill-tag">Git / GitHub</span>
+            </div>
+
+            <h2>Professional Strengths</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Team Leadership</span>
+                <span class="skill-tag">Process Optimization</span>
+                <span class="skill-tag">Financial / Float Management</span>
+                <span class="skill-tag">Quality Assurance</span>
+                <span class="skill-tag">Cross-functional Communication</span>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
